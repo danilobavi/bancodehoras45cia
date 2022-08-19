@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançe seu Turno</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Turno de Serviço</h1>
+        <p id="subtitulo">Insira os dados</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="data"><strong>Data</strong></label>
+                <input type="date" name="data" id="data" required>
+            </div>
+           
+            <div class="campo">
+                <label for="horai"><strong>Hora Inicio</strong></label>
+                <input type="time" name="horai" id="horai" required>
+            </div>
+            
+            <div class="campo">
+                <label for="horaf"><strong>Hora Final</strong></label>
+                <input type="time" name="horaf" id="horaf" required>
+            </div>
+        
+            <div class="campo">
+                <label for="Hora Noturna"><strong>Hora Noturna</strong></label>
+                <select id="Hora Noturna" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Sim</option>
+                  <option>Não</option>            
+                </select>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="Relátório"><strong>Informções Sobre o Turno: </strong></label>
+                <br>
+                <textarea rows="6" style="width: 26em" id="informações" name="informações"></textarea>
+            </div>
+        </fieldset>
+        <button class="botao" type="submit" onsubmit="">Concluído</button>  
+    </form>
+</body>
+</html>
+
